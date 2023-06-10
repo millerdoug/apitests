@@ -71,7 +71,7 @@ public class PostsTest extends ApiAbstract {
 		given()
 			.queryParam("Param","InvalidData").
 		when()
-			.get(baseUrl + thisEndpoint + "/asdf"). //I wouldn't put in this here but the endpoint ignored the query
+			.get(baseUrl + thisEndpoint + "/asdf"). //I wouldn't put in this here but the endpoint ignored the query, so I made it not found
 		then()
 			.statusCode(HttpStatus.SC_NOT_FOUND);
 	}
