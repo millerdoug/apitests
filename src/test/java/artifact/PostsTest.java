@@ -29,7 +29,7 @@ public class PostsTest extends ApiAbstract {
         response = get(baseUrl + thisEndpoint);
         List<String> resIDs = response.jsonPath().get("id");
         assertEquals("Expecting items",numRecords,resIDs.size());
-        //Checking expected number of items returned based on where the test edges are, structure returned, etc are common tests
+        //Checking expected number of items returned based on where the test edges are, schema validation, etc are common tests
         Headers allHeaders = response.getHeaders();
         //As well as validating headers if needed for auth, perhaps or in specialized situations. Headers not usually checked
 	}

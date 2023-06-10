@@ -29,3 +29,4 @@ replay_pid*
 .settings/
 .classpath
 .project
+__pycache__/
